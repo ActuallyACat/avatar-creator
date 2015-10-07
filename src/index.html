@@ -1,0 +1,158 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!-- Place favicon.ico in the root directory -->
+    </head>
+    <body>
+
+        <div class="container">
+            <!--[if lt IE 8]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <br><br>
+            <div class="row">
+                <div id="avatarCanvasContainer" class="col-md-6">
+					
+                </div>
+                <div id="controlContainer" class="col-md-6">
+                    <div>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="body">
+                                <div class="selector-group">
+                                    <div class="selector-left"></div>
+                                    <div class="selector-middle">Gender</div>
+                                    <div class="selector-right"></div>
+                                </div>
+                                <div class="selector-group">
+                                    <div class="selector-left"></div>
+                                    <div class="selector-middle">Head</div>
+                                    <div class="selector-right"></div>
+                                </div>
+                                <div class="selector-group">
+                                    <div class="selector-left"></div>
+                                    <div class="selector-middle">Skin</div>
+                                    <div class="selector-right"></div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="head">
+                                <div class="selector-group">
+                                    <div class="selector-left"></div>
+                                    <div class="selector-middle">Eyes</div>
+                                    <div class="selector-right"></div>
+                                </div>
+                                <div class="selector-group">
+                                    <div class="selector-left"></div>
+                                    <div class="selector-middle">Mouth</div>
+                                    <div class="selector-right"></div>
+                                </div>
+                                <div class="selector-group">
+                                    <div class="selector-left"></div>
+                                    <div class="selector-middle">Hair</div>
+                                    <div class="selector-right"></div>
+                                </div>
+                                <div class="selector-group">
+                                    <div class="selector-left"></div>
+                                    <div class="selector-middle">Hair Colour</div>
+                                    <div class="selector-right"></div>
+                                </div>
+                                <div class="selector-group">
+                                    <div class="selector-left"></div>
+                                    <div class="selector-middle">Facial Hair</div>
+                                    <div class="selector-right"></div>
+                                </div>
+                                <div class="selector-group">
+                                    <div class="selector-left"></div>
+                                    <div class="selector-middle">Facial Hair Colour</div>
+                                    <div class="selector-right"></div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="accessories">
+                                <div class="selector-group">
+                                    <div class="selector-left"></div>
+                                    <div class="selector-middle">Shirt/Dress</div>
+                                    <div class="selector-right"></div>
+                                </div>
+                                <div class="selector-group">
+                                    <div class="selector-left"></div>
+                                    <div class="selector-middle">Pants</div>
+                                    <div class="selector-right"></div>
+                                </div>
+                                <div class="selector-group">
+                                    <div class="selector-left"></div>
+                                    <div class="selector-middle">Belt</div>
+                                    <div class="selector-right"></div>
+                                </div>
+                                <div class="selector-group">
+                                    <div class="selector-left"></div>
+                                    <div class="selector-middle">Glasses</div>
+                                    <div class="selector-right"></div>
+                                </div>
+                                <div class="selector-group">
+                                    <div class="selector-left"></div>
+                                    <div class="selector-middle">Hat/Mask</div>
+                                    <div class="selector-right"></div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                        </div>
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs type-group" role="tablist">
+                            <li role="presentation" class="type-control active">
+                                <a href="#body" aria-controls="profile" role="tab" data-toggle="tab">
+                                    <div class="type-control-icon">
+                                        <img src="assets/svg/general.svg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation" class=" type-control">
+                                <a href="#head" aria-controls="home" role="tab" data-toggle="tab">
+                                    <div class="type-control-icon">
+                                        <img src="assets/svg/head.svg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation" class="type-control">
+                                <a href="#accessories" aria-controls="messages" role="tab" data-toggle="tab">
+                                    <div class="type-control-icon">
+                                        <img src="assets/svg/accessories.svg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- / container -->
+            </div>
+
+            <div class="row">
+                <div class="controls-center">
+                    <button type="button" class="btn">Random</button>
+                    <button type="button" class="btn">Reset</button>
+                    <button type="button" class="btn">Download</button>
+                    <button type="button" class="btn">Share</button>
+                </div>
+            <!-- /row -->
+            </div>
+
+
+        <script src = "../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src = "../bower_components/snap.svg/dist/snap.svg-min.js"></script>
+        <script src = "../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src = "js/main.js"></script>
+        
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,89 @@
+#avatarCanvas { 
+   width: 100%;
+   min-height: 400px;
+}
+#avatarCanvas {
+        border: 2px solid #CCC;
+}
+#controlContainer {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-weight: 300;
+    font-size: 1.7em;
+    color: #757575;
+}
+.selector-left, .selector-right, .selector-middle { 
+    padding: 15px;
+    display: table-cell;
+    text-align: center;
+}
+.selector-left{
+    width: 20%; 
+    background: url("../img/arrowLeft.png") center;
+    background-position: 30% 50%;
+    background-repeat: no-repeat;
+} 
+.selector-right { 
+    width: 20%;
+    background: url("../img/arrowRight.png") center;
+    background-position: 70% 50%;
+    background-repeat: no-repeat;
+}
+.selector-right, .selector-left { 
+    cursor:pointer;
+}
+.selector-middle { 
+    width: 60%;
+}
+.selector-group, .type-group { 
+    width: 100%;
+    display: table;
+    background-color: #DDD;
+}
+.type-control {
+    padding: 10px;
+    width: 33.33%;
+    display: inline-block;
+    background-color: #AAA;
+    display: table-cell;
+}
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:focus, 
+.nav-tabs > li.active > a:hover {
+    background-color: inherit;
+}
+.nav > li > a:focus, 
+.nav > li > a:hover{
+    background-color: inherit;
+    border:none;
+}
+.type-control {
+    border-top: 4px solid white;
+}
+.type-control.active {
+    background-color: #DDD;
+    border-right: 4px solid white;
+    border-left: 4px solid white;
+    border-top: 4px solid #DDD;
+}
+.type-control.active:last-child {
+    border-right: none;
+}
+.type-control.active:first-child {
+    border-left: none;
+}
+.type-control > a {
+    text-align: center;
+}
+
+.controls-center { 
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.controls-center > button {
+    font-size: 2em;
+    background-color: inherit;
+    color: #D73365;
+}
