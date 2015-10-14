@@ -492,6 +492,7 @@ AvatarModel.prototype = {
         // Maybe need to change the clothes when changing gender
         this.updateShirt(0)
         this.updateBelts(this._beltIndex)
+        this.updatePants(this._pantsIndex)
     },
 
     updateShirt : function(shirtIndex) { 
@@ -550,6 +551,7 @@ AvatarModel.prototype = {
     },
 
     updatePants : function(pantsIndex) { 
+
         if (pantsIndex >= this._pantsColours.length) {
             pantsIndex = 0;
         }
@@ -558,12 +560,20 @@ AvatarModel.prototype = {
         }
 
         this._pantsIndex = pantsIndex
-
+        $('#avatar-female-pants').hide()
         $('#avatar-male-pants').hide()
-        if("pantsColour" in this._pantsColours[this._pantsIndex]) {
-            $('#avatar-male-pants').show()
-            $('.pants-colour').css( "color", this._pantsColours[this._pantsIndex].pantsColour )
-        } 
+
+        if(this._genderIndex === 0) {
+            if("pantsColour" in this._pantsColours[this._pantsIndex]) {
+                $('#avatar-male-pants').show()
+                $('.pants-colour').css( "color", this._pantsColours[this._pantsIndex].pantsColour )
+            } 
+        } else { 
+            if("pantsColour" in this._pantsColours[this._pantsIndex]) {
+                $('#avatar-female-pants').show()
+                $('.pants-colour').css( "color", this._pantsColours[this._pantsIndex].pantsColour )
+            } 
+        }
     },
 
     updateBelts: function(beltIndex) { 
