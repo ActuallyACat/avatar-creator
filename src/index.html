@@ -22,51 +22,491 @@
             <br><br>
             <div class="row">
                 <div id="avatarCanvasContainer" class="col-md-6">
-					
+                    <!-- <canvas id="canvas"></canvas> -->
+					<svg id="avatarCanvas" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500">
+                        <g transform="matrix( 1.8564697265625, 0, 0, 1.9564697265625, 250.2,366.6) ">                
+                            <g id="avatar" transform="matrix( 1, 0, 0, 1, 40, -0.55) ">
+                                <g id="right-arm" transform="matrix( -1, 0, 0, 1, -7.1,-69.8) ">
+                                    <g transform="matrix( 1, 0, 0, 1, 0,0) ">
+                                        <use class="skin-colour" xlink:href="assets/svg/avatar.svg#avatar-arm" />
+                                    </g>
+                                    <g id="right-shirt-sleeve"> 
+                                        <g class="avatar-sleeve avatar-sleeve-none" transform="matrix( 1, 0, 0, 1, 0.05, 0.1)">
+                                        </g>                           
+                                        <g class="avatar-sleeve avatar-sleeve-short" transform="matrix( 1, 0, 0, 1, 0.05, 0.1)"> 
+                                            <use class="shirt-colour" xlink:href="assets/svg/avatar.svg#male-shirt-sleeve-0" />
+                                        </g>
+                                        <g class="avatar-sleeve avatar-sleeve-long" transform="matrix( -1, 0, 0, 1, 16.8,0)"> 
+                                            <use class="shirt-colour-highlight" xlink:href="assets/svg/avatar.svg#male-shirt-sleeve-1-highlight" />
+                                            <use class="shirt-colour" xlink:href="assets/svg/avatar.svg#male-shirt-sleeve-1" />
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="left-arm" transform="matrix( 1, 0, 0, 1, 6.65, -69.8) ">
+                                    <g transform="matrix( 1, 0, 0, 1, 0, 0) ">
+                                        <use class="skin-colour" xlink:href="assets/svg/avatar.svg#avatar-arm" />
+                                    </g>    
+                                    <g id="left-shirt-sleeve">
+                                        <g class="avatar-sleeve avatar-sleeve-none" transform="matrix( 1, 0, 0, 1, 0.05, 0.1)"> 
+                                            
+                                        </g>
+                                        <g class="avatar-sleeve avatar-sleeve-short" transform="matrix( 1, 0, 0, 1, 0.05, 0.1)"> 
+                                            <use class="shirt-colour" xlink:href="assets/svg/avatar.svg#male-shirt-sleeve-0" />
+                                        </g>
+                                        <g class="avatar-sleeve avatar-sleeve-long" transform="matrix( -1, 0, 0, 1, 17, 0.1)"> 
+                                            <use class="shirt-colour-highlight" xlink:href="assets/svg/avatar.svg#male-shirt-sleeve-1-highlight" />
+                                            <use class="shirt-colour" xlink:href="assets/svg/avatar.svg#male-shirt-sleeve-1" />
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="body" transform="matrix( 1, 0, 0, 1, -16.3,-72.1) ">
+                                    <g class="avatar-body" transform="matrix( 1, 0, 0, 1, 0,0) ">
+                                        <use class="skin-colour" xlink:href="assets/svg/avatar.svg#male-body" />
+                                        <use class="skin-colour-outline" xlink:href="assets/svg/avatar.svg#male-body-chest" />
+                                        <g id="avatar-male-shirt" transform="matrix( 1, 0, 0, 1, 0, 2.5)">
+                                            <use class="shirt-colour" xlink:href="assets/svg/avatar.svg#male-shirt-0" />
+                                        </g>
+                                        <g id="avatar-male-pants" transform="matrix( 1, 0, 0, 1, 0, 42.5)">
+                                            <use class="pants-colour" xlink:href="assets/svg/avatar.svg#male-pants-0" />
+                                        </g>
+                                        <g id="male-belt" transform="matrix( 1, 0, 0, 1, 0, 39)">
+                                            <g class="avatar-male-belt" transform="matrix( 1, 0, 0, 1, 0, 0) ">
+                                            </g>
+                                            <g class="avatar-male-belt" transform="matrix( 1, 0, 0, 1, 0, 0) ">
+                                                <use xlink:href="assets/svg/avatar.svg#male-belt-0" />
+                                            </g>
+                                            <g class="avatar-male-belt" transform="matrix( 1, 0, 0, 1, 0, 0) ">
+                                                <use xlink:href="assets/svg/avatar.svg#male-belt-1" />
+                                            </g>
+                                            <g class="avatar-male-belt" transform="matrix( 1, 0, 0, 1, 0, 0) ">
+                                                <use xlink:href="assets/svg/avatar.svg#male-belt-2" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g class="avatar-body" transform="matrix( 1, 0, 0, 1, 0, 0) ">
+                                        <use class="skin-colour" xlink:href="assets/svg/avatar.svg#female-body" />
+                                        <use class="skin-colour-outline" xlink:href="assets/svg/avatar.svg#female-body-chest" />
+                                        <g id="avatar-female-shirt-base" class="avatar-female-shirt" transform="matrix( 1, 0, 0, 1, 0, 2.5)">
+                                            <g transform="matrix( 1, 0, 0, 1, 0, 2.5) ">
+                                                <use class="shirt-colour" xlink:href="assets/svg/avatar.svg#female-shirt-0"/>
+                                            </g>
+                                            <g transform="matrix( 0.8936920166015625, 0, 0, 1, 1.65 ,2) ">
+                                                <use xlink:href="assets/svg/avatar.svg#female-shirt-0-outline"/>
+                                            </g>
+                                            <g transform="matrix( 0.8936920166015625, 0, 0, 1, 7.65 ,23) ">
+                                                <use class="shirt-colour-chest" xlink:href="assets/svg/avatar.svg#female-shirt-0-chest"/>
+                                            </g>
+                                        </g>
+                                        <g id="avatar-female-shirt-stripe" class="avatar-female-shirt" transform="matrix( 1, 0, 0, 1, 0, 2.5)">
+                                            <g transform="matrix( 1, 0, 0, 1, 0, 2.5) ">
+                                                <use class="shirt-colour" xlink:href="assets/svg/avatar.svg#female-shirt-0"/>
+                                            </g>
+                                            <g transform="matrix( 0.8936920166015625, 0, 0, 1, 2.2,8.75)">
+                                                <use class="shirt-colour-highlight" xlink:href="assets/svg/avatar.svg#female-shirt-1-stripe"/>
+                                            </g>
+                                            <g transform="matrix( 0.8936920166015625, 0, 0, 1, 1.65 ,1.2) ">
+                                                <use xlink:href="assets/svg/avatar.svg#female-shirt-0-outline"/>
+                                            </g>
+                                            <g transform="matrix( 0.8936920166015625, 0, 0, 1, 7.65 ,23) ">
+                                                <use class="shirt-colour-chest" xlink:href="assets/svg/avatar.svg#female-shirt-0-chest"/>
+                                            </g>
+                                        </g>
+                                        <g id="female-belt" transform="matrix( 1, 0, 0, 1, 0, 39)">
+                                            <g class="avatar-female-belt" transform="matrix( 0.89, 0, 0, 0.89, 2, 0) ">
+                                            </g>
+                                            <g class="avatar-female-belt" transform="matrix( 0.89, 0, 0, 0.89, 2, 0) ">
+                                                <use xlink:href="assets/svg/avatar.svg#male-belt-0" />
+                                            </g>
+                                            <g class="avatar-female-belt" transform="matrix( 0.89, 0, 0, 0.89, 2, 0) ">
+                                                <use xlink:href="assets/svg/avatar.svg#male-belt-1" />
+                                            </g>
+                                            <g class="avatar-female-belt" transform="matrix( 0.89, 0, 0, 0.89, 2, 0) ">
+                                                <use xlink:href="assets/svg/avatar.svg#male-belt-2" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="head" transform="matrix( 1, 0, 0, 1, -43.85,-140.6) ">
+                                    <use class="skin-colour" xlink:href="assets/svg/avatar.svg#head-default" />
+                                    <g id="mouth" transform="matrix( 1, 0, 0, 1, 42.4,58.95) ">
+                                        <g class="avatar-mouth" transform="matrix( 0.97149658203125, -0.2338714599609375, 0.2338714599609375, 0.97149658203125, -3.35,1.05) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-mouth-0" />
+                                        </g>
+                                        <g class="avatar-mouth" transform="matrix( 1, 0, 0, 1, -7.45,-1) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-mouth-1" />
+                                        </g>
+                                        <g class="avatar-mouth" transform="matrix( 1, 0, 0, 1, -9.65,-2.1) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-mouth-2" />
+                                        </g>
+                                        <g class="avatar-mouth" transform="matrix( 0.97149658203125, -0.2338714599609375, 0.2338714599609375, 0.97149658203125, -3.35,1.05) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-mouth-3" />
+                                        </g>
+                                        <g class="avatar-mouth" transform="matrix( 1, 0, 0, 1, -26.05,-25.55) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-mouth-4" />
+                                        </g>
+                                        <g class="avatar-mouth" transform="matrix( 1, 0, 0, 1, -6.3,-1) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-mouth-5" />
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-mouth-6" />
+                                        </g>
+                                        <g class="avatar-mouth" transform="matrix( 1, 0, 0, 1, -6.3,-1) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-mouth-7" />
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-mouth-8" />
+                                        </g>
+                                    </g>
+                                    <g id="eyes" transform="matrix( 1, 0, 0, 1, 16.35,33.4) ">
+                                        <g class="avatar-eyes"> 
+                                            <g transform="matrix( 0.8301849365234375, 0, 0, 0.8301849365234375, 4.7,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-0" />
+                                            </g>
+                                            <g transform="matrix( 0.8301849365234375, 0, 0, 0.8301849365234375, 43.6,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-0" />
+                                            </g>
+                                        </g>
+                                        <g class="avatar-eyes"> 
+                                            <g transform="matrix( 0.8301849365234375, 0, 0, 0.8301849365234375, 6.5,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-1" />
+                                            </g>
+                                            <g transform="matrix( 0.8301849365234375, 0, 0, 0.8301849365234375, 45.3,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-1" />
+                                            </g>
+                                        </g>
+                                        <g class="avatar-eyes"> 
+                                            <g transform="matrix( 0.8301849365234375, 0, 0, 0.8301849365234375, 6.5,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-2" />
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-2-brows" />
+                                            </g>
+                                            <g transform="matrix( 0.8301849365234375, 0, 0, 0.8301849365234375, 45.3,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-2" />
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-2-brows" />
+                                            </g>
+                                        </g>
+                                        <g class="avatar-eyes"> 
+                                            <g transform="matrix( 0.8301849365234375, 0, 0, 0.8301849365234375, 4.7,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-3" />
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-3-brow-left" />
+                                            </g>
+                                            <g transform="matrix( 0.8301849365234375, 0, 0, 0.8301849365234375, 43.6,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-3" />
+                                            </g>
+                                            <g transform="matrix( 0.8301849365234375, 0, 0, 0.8301849365234375, 11,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-3-brow-right" />
+                                            </g>
+                                        </g>
+                                        <g class="avatar-eyes"> 
+                                            <g transform="matrix( 0.8301849365234375, 0, 0, 0.8301849365234375, 8.7,3.15) ">
+                                                
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-4-right-brow" />
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-4-right" />
+                                            </g>
+                                            <g transform="matrix( 0.8301849365234375, 0, 0, 0.8301849365234375, 3.7,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-4-left" />
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-4-left-brow" />
+                                            </g>
+                                        </g>
+                                        <g class="avatar-eyes"> 
+                                            <g transform="matrix( 0.8301849365234375, 0, 0, 0.8301849365234375, 4.7,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-5" />
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-5-brow" />
+                                            </g>
+                                            <g transform="matrix( -0.8301849365234375, 0, 0, 0.8301849365234375, 52.7,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-5" />
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-5-brow" />
+                                            </g>
+                                        </g>
+                                        <g class="avatar-eyes"> 
+                                            <g transform="matrix( 0.8301849365234375, 0, 0, 0.8301849365234375, 4.7,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-6" />
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-6-brow" />
+                                            </g>
+                                            <g transform="matrix( -0.8301849365234375, 0, 0, 0.8301849365234375, 52.7,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-6" />
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-6-brow" />
+                                            </g>
+                                        </g>
+                                        <g class="avatar-eyes"> 
+                                            <g transform="matrix( 0.8301849365234375, 0, 0, 0.8301849365234375, 4.7,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-7" />
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-7-brow" />
+                                            </g>
+                                            <g transform="matrix( -0.8301849365234375, 0, 0, 0.8301849365234375, 52.7,3.15) ">
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-7" />
+                                                <use xlink:href="assets/svg/avatar.svg#avatar-eyes-7-brow" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g id="glasses" transform="matrix( 1, 0, 0, 1, 14,37.25) ">
+                                        <g class="avatar-glasses" transform="matrix( 1, 0, 0, 1, 0,0) ">
+                                            <!-- No glasses by default -->
+                                        </g>
+                                        <g class="avatar-glasses" transform="matrix( 1, 0, 0, 1, 0,0) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-glasses-0" />
+                                        </g>
+                                        <g class="avatar-glasses" transform="matrix( 1, 0, 0, 1, 0,0) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-glasses-1" />
+                                        </g>
+                                        <g class="avatar-glasses" transform="matrix( 1, 0, 0, 1, 0,0) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-glasses-2" />
+                                        </g>
+                                        <g class="avatar-glasses" transform="matrix( 1, 0, 0, 1, 0,0) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-glasses-3" />
+                                        </g>
+                                        <g class="avatar-glasses" transform="matrix( 1, 0, 0, 1, 0,0) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-glasses-4" />
+                                        </g>
+                                        <g class="avatar-glasses" transform="matrix( 1, 0, 0, 1, 0,0) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-glasses-5" />
+                                        </g>
+                                        <g class="avatar-glasses" transform="matrix( 1, 0, 0, 1, 0,0) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-glasses-6" />
+                                        </g>
+                                        <g class="avatar-glasses" transform="matrix( 1, 0, 0, 1, 0,0) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-glasses-7" />
+                                        </g>
+                                        <g class="avatar-glasses" transform="matrix( 1, 0, 0, 1, 0,0) ">
+                                            <use xlink:href="assets/svg/avatar.svg#avatar-glasses-8" />
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="hair" transform="matrix( 1, 0, 0, 1, -38.5, -148) ">
+                                    <g class="avatar-hair" transform="matrix( 1, 0, 0, 1, 0.95,4.85) ">
+                                        <!-- No hair by default -->
+                                    </g>
+                                    <g class="avatar-hair" transform="matrix( 1, 0, 0, 1, 0.95,4.85) ">
+                                        <use class="hair-colour" xlink:href="assets/svg/avatar.svg#avatar-hair-0"/>
+                                    </g>
+                                    <g class="avatar-hair" transform="matrix( 1, 0, 0, 1, 0,0) ">
+                                        <use class="hair-colour" xlink:href="assets/svg/avatar.svg#avatar-hair-1"/>
+                                    </g>
+                                    <g class="avatar-hair" transform="matrix( 1, 0, 0, 1, 0.1,0) ">
+                                        <use class="hair-colour" xlink:href="assets/svg/avatar.svg#avatar-hair-3"/>
+                                    </g> 
+                                    <g class="avatar-hair" transform="matrix( 1, 0, 0, 1, 0.1,0) ">
+                                        <use class="hair-colour" xlink:href="assets/svg/avatar.svg#avatar-hair-4"/>
+                                    </g> 
+                                    <g class="avatar-hair" transform="matrix( 1, 0, 0, 1, -0.5,-20) ">
+                                        <use class="hair-colour" xlink:href="assets/svg/avatar.svg#avatar-hair-5"/>
+                                    </g> 
+                                    <g class="avatar-hair" transform="matrix( 1, 0, 0, 1, -0.5,-8) ">
+                                        <use class="hair-colour" xlink:href="assets/svg/avatar.svg#avatar-hair-6"/>
+                                    </g> 
+                                    <g class="avatar-hair" transform="matrix( 1, 0, 0, 1, -1.8,-11) ">
+                                        <use class="hair-colour" xlink:href="assets/svg/avatar.svg#avatar-hair-7"/>
+                                    </g> 
+                                    <g class="avatar-hair" transform="matrix( 1, 0, 0, 1, -2.5,-11) ">
+                                        <use class="hair-colour" xlink:href="assets/svg/avatar.svg#avatar-hair-8"/>
+                                    </g> 
+                                    <g class="avatar-hair" transform="matrix( 1, 0, 0, 1, -11,-16) ">
+                                        <use class="hair-colour"  xlink:href="assets/svg/avatar.svg#avatar-hair-9"/>
+                                        <g transform="matrix( 0.99078369140625, 0.13214111328125, -0.13214111328125, 0.99078369140625, 63.55,5.2) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.99078369140625, 0.13214111328125, -0.13214111328125, 0.99078369140625, 69.25,10.95) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.99078369140625, 0.13214111328125, -0.13214111328125, 0.99078369140625, 61.95,17.3) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.99078369140625, 0.13214111328125, -0.13214111328125, 0.99078369140625, 66.5,23.35) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.99078369140625, 0.13214111328125, -0.13214111328125, 0.99078369140625, 60.35,29.35) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.999, 0.139, -0.13214111328125, 0.99078369140625, 60.35,29.35) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.8924560546875, 0.447784423828125, -0.447784423828125, 0.8924560546875, 80.35,9.35) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.8924560546875, 0.447784423828125, -0.447784423828125, 0.8924560546875, 85.75,17.85) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.8924560546875, 0.447784423828125, -0.447784423828125, 0.8924560546875, 75.9,18.4) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.8924560546875, 0.447784423828125, -0.447784423828125, 0.8924560546875, 80.35,28.75) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.8924560546875, 0.447784423828125, -0.447784423828125, 0.8924560546875,  72.15,31.35) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.8924560546875, 0.447784423828125, -0.447784423828125, 0.8924560546875, 74.9,39.5) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.7945556640625, 0.6027679443359375, -0.6027679443359375, 0.7945556640625, 92.15,46.3) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.7945556640625, 0.6027679443359375, -0.6027679443359375, 0.7945556640625, 90.5,28.1) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.7945556640625, 0.6027679443359375, -0.6027679443359375, 0.7945556640625, 92.15,36.2) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.7945556640625, 0.6027679443359375, -0.6027679443359375, 0.7945556640625, 83.05,38.9) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( 0.7945556640625, 0.6027679443359375, -0.6027679443359375, 0.7945556640625, 83.7,47.6) ">
+                                            <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.99078369140625, 0.13214111328125, 0.13214111328125, 0.99078369140625, 38.1,5.2) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.99078369140625, 0.13214111328125, 0.13214111328125, 0.99078369140625, 32.4,10.95) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.99078369140625, 0.13214111328125, 0.13214111328125, 0.99078369140625, 39.7,17.3) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.99078369140625, 0.13214111328125, 0.13214111328125, 0.99078369140625, 35.15,23.35) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.99078369140625, 0.13214111328125, 0.13214111328125, 0.99078369140625, 41.3,29.35) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.99078369140625, 0.13214111328125, 0.13214111328125, 0.99078369140625, 36.75,35.3) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.8924560546875, 0.447784423828125, 0.447784423828125, 0.8924560546875, 21.3,9.35) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.8924560546875, 0.447784423828125, 0.447784423828125, 0.8924560546875, 15.9,17.85) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.8924560546875, 0.447784423828125, 0.447784423828125, 0.8924560546875, 25.75,18.4) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.8924560546875, 0.447784423828125, 0.447784423828125, 0.8924560546875, 21.3,28.75) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.8924560546875, 0.447784423828125, 0.447784423828125, 0.8924560546875, 29.5,31.35) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.8924560546875, 0.447784423828125, 0.447784423828125, 0.8924560546875, 26.75,39.5) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.7945556640625, 0.6027679443359375, 0.6027679443359375, 0.7945556640625, 9.5,46.3) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.7945556640625, 0.6027679443359375, 0.6027679443359375, 0.7945556640625, 11.15,28.1) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.7945556640625, 0.6027679443359375, 0.6027679443359375, 0.7945556640625, 9.5,36.2) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.7945556640625, 0.6027679443359375, 0.6027679443359375, 0.7945556640625, 18.6,38.9) ">
+                                        <use class="hair-colour-highlights" xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+
+                                        <g transform="matrix( -0.7945556640625, 0.6027679443359375, 0.6027679443359375, 0.7945556640625, 17.95,47.6) ">
+                                        <use class="hair-colour-highlights"  xlink:href="assets/svg/avatar.svg#avatar-hair-9-highlights"/>
+                                        </g>
+                                    </g> 
+                                </g>
+                                <g id="hats" transform="matrix( 1, 0, 0, 1, -46, -168) ">
+                                    <g class="avatar-hats" transform="matrix( 1, 0, 0, 1, 0, 0) ">
+                                        
+                                    </g>
+                                    <g class="avatar-hats" transform="matrix( 1, 0, 0, 1, 0, 0) ">
+                                        <use xlink:href="assets/svg/avatar.svg#avatar-hat-0" />
+                                    </g>
+                                    <g class="avatar-hats" transform="matrix( 1, 0, 0, 1, 8.5, 12) ">
+                                        <use xlink:href="assets/svg/avatar.svg#avatar-hat-1" />
+                                    </g>
+                                    <g class="avatar-hats" transform="matrix( 1, 0, 0, 1, 8.5, 12) ">
+                                        <use xlink:href="assets/svg/avatar.svg#avatar-hat-2" />
+                                    </g>
+                                    <g class="avatar-hats" transform="matrix( 1, 0, 0, 1, 8.5, 12) ">
+                                        <use xlink:href="assets/svg/avatar.svg#avatar-hat-3" />
+                                    </g>
+                                    <g class="avatar-hats" transform="matrix( 1, 0, 0, 1, 7.8, 13.5) ">
+                                        <use xlink:href="assets/svg/avatar.svg#avatar-hat-4" />
+                                    </g>
+                                    <g class="avatar-hats" transform="matrix( 1, 0, 0, 1, 7.8, 13.5) ">
+                                        <use xlink:href="assets/svg/avatar.svg#avatar-hat-5" />
+                                    </g>
+                                    <g class="avatar-hats" transform="matrix( 1, 0, 0, 1, 7.8, 13.5) ">
+                                        <use xlink:href="assets/svg/avatar.svg#avatar-hat-6" />
+                                    </g>
+                                </g>
+                            </g> 
+                        </g>
+                    </svg>
                 </div>
                 <div id="controlContainer" class="col-md-6">
                     <div>
                         <!-- Tab panes -->
                         <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="body">
-                                <div class="selector-group">
+                            <div role="tabpanel" class="tab-pane active" id="tab-body">
+                                <div class="selector-group gender-group">
                                     <div class="selector-left"></div>
                                     <div class="selector-middle">Gender</div>
                                     <div class="selector-right"></div>
                                 </div>
-                                <div class="selector-group">
+                                <!-- <div class="selector-group head-group">
                                     <div class="selector-left"></div>
                                     <div class="selector-middle">Head</div>
                                     <div class="selector-right"></div>
-                                </div>
-                                <div class="selector-group">
+                                </div> -->
+                                <div class="selector-group skin-group">
                                     <div class="selector-left"></div>
                                     <div class="selector-middle">Skin</div>
                                     <div class="selector-right"></div>
                                 </div>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="head">
-                                <div class="selector-group">
+                            <div role="tabpanel" class="tab-pane" id="tab-head">
+                                <div class="selector-group eyes-group">
                                     <div class="selector-left"></div>
                                     <div class="selector-middle">Eyes</div>
                                     <div class="selector-right"></div>
                                 </div>
-                                <div class="selector-group">
+                                <div class="selector-group mouth-group">
                                     <div class="selector-left"></div>
                                     <div class="selector-middle">Mouth</div>
                                     <div class="selector-right"></div>
                                 </div>
-                                <div class="selector-group">
+                                <div class="selector-group hair-group">
                                     <div class="selector-left"></div>
                                     <div class="selector-middle">Hair</div>
                                     <div class="selector-right"></div>
                                 </div>
-                                <div class="selector-group">
+                                <div class="selector-group hair-colour-group">
                                     <div class="selector-left"></div>
                                     <div class="selector-middle">Hair Colour</div>
                                     <div class="selector-right"></div>
                                 </div>
-                                <div class="selector-group">
+                               <!--  <div class="selector-group">
                                     <div class="selector-left"></div>
                                     <div class="selector-middle">Facial Hair</div>
                                     <div class="selector-right"></div>
@@ -75,30 +515,30 @@
                                     <div class="selector-left"></div>
                                     <div class="selector-middle">Facial Hair Colour</div>
                                     <div class="selector-right"></div>
-                                </div>
+                                </div> -->
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="accessories">
-                                <div class="selector-group">
+                            <div role="tabpanel" class="tab-pane" id="tab-accessories">
+                                <div class="selector-group shirt-group">
                                     <div class="selector-left"></div>
                                     <div class="selector-middle">Shirt/Dress</div>
                                     <div class="selector-right"></div>
                                 </div>
-                                <div class="selector-group">
+                                <div class="selector-group pants-group">
                                     <div class="selector-left"></div>
                                     <div class="selector-middle">Pants</div>
                                     <div class="selector-right"></div>
                                 </div>
-                                <div class="selector-group">
+                                <div class="selector-group belt-group">
                                     <div class="selector-left"></div>
                                     <div class="selector-middle">Belt</div>
                                     <div class="selector-right"></div>
                                 </div>
-                                <div class="selector-group">
+                                <div class="selector-group glasses-group">
                                     <div class="selector-left"></div>
                                     <div class="selector-middle">Glasses</div>
                                     <div class="selector-right"></div>
                                 </div>
-                                <div class="selector-group">
+                                <div class="selector-group hat-group">
                                     <div class="selector-left"></div>
                                     <div class="selector-middle">Hat/Mask</div>
                                     <div class="selector-right"></div>
@@ -110,21 +550,21 @@
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs type-group" role="tablist">
                             <li role="presentation" class="type-control active">
-                                <a href="#body" aria-controls="profile" role="tab" data-toggle="tab">
+                                <a href="#tab-body" aria-controls="profile" role="tab" data-toggle="tab">
                                     <div class="type-control-icon">
                                         <img src="assets/svg/general.svg" alt="">
                                     </div>
                                 </a>
                             </li>
                             <li role="presentation" class=" type-control">
-                                <a href="#head" aria-controls="home" role="tab" data-toggle="tab">
+                                <a href="#tab-head" aria-controls="home" role="tab" data-toggle="tab">
                                     <div class="type-control-icon">
                                         <img src="assets/svg/head.svg" alt="">
                                     </div>
                                 </a>
                             </li>
                             <li role="presentation" class="type-control">
-                                <a href="#accessories" aria-controls="messages" role="tab" data-toggle="tab">
+                                <a href="#tab-accessories" aria-controls="messages" role="tab" data-toggle="tab">
                                     <div class="type-control-icon">
                                         <img src="assets/svg/accessories.svg" alt="">
                                     </div>
@@ -138,19 +578,24 @@
 
             <div class="row">
                 <div class="controls-center">
-                    <button type="button" class="btn">Random</button>
-                    <button type="button" class="btn">Reset</button>
-                    <button type="button" class="btn">Download</button>
+                    <button type="button" class="btn btn-randomise">Random</button>
+                    <button type="button" class="btn btn-reset">Reset</button>
+                    <button type="button" class="btn btn-save">Download</button>
                     <button type="button" class="btn">Share</button>
                 </div>
             <!-- /row -->
             </div>
-
+        </div>
 
         <script src = "../bower_components/jquery/dist/jquery.min.js"></script>
-        <script src = "../bower_components/snap.svg/dist/snap.svg-min.js"></script>
         <script src = "../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src = "../bower_components/canvg/rgbcolor.js"></script> 
+        <script src = "../bower_components/canvg/StackBlur.js"></script>
+        <script src = "../bower_components/canvg/canvg.js"></script> 
+        <script src = "../bower_components/FileSaver.js/FileSaver.min.js"></script>
+        <script src = "../bower_components/blueimp-canvas-to-blob/js/canvas-to-blob.min.js"></script>
         <script src = "js/main.js"></script>
+
         
         </script>
 

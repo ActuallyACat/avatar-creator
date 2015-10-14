@@ -1,9 +1,6 @@
 #avatarCanvas { 
-   width: 100%;
-   min-height: 400px;
-}
-#avatarCanvas {
-        border: 2px solid #CCC;
+    width: 100%;
+    min-height: 400px;
 }
 #controlContainer {
     font-family: 'Oswald', sans-serif;
