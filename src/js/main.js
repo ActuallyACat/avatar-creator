@@ -339,7 +339,6 @@ AvatarModel.prototype = {
         this._hairIndex = this.randomNumber(0, $('.avatar-hair').length)
         this._hairColourIndex = this.randomNumber(0, this._hairColours.length)
         this._glassesIndex = this.randomNumber(0, $('.avatar-glasses').length)
-        this._genderIndex = this.randomNumber(0, 1)
         this._maleShirtIndex = this.randomNumber(0, this._maleShirtColours.length)
         this._femaleShirtIndex = this.randomNumber(0, this._femaleShirtColours.length)
         this._pantsIndex = this.randomNumber(0, this._pantsColours.length)

@@ -1,6 +1,18 @@
 #avatarCanvas { 
-    width: 100%;
-    min-height: 400px;
+    width: 500px;
+    height: 500px;
+}
+@media (max-width: 600px) {
+    #avatarCanvas { 
+        width: 250px;
+        height: 250px;
+    }
+    .selector-middle { 
+        padding: 8px;
+    }
+    .type-control-icon>img {
+        height: 35px;
+    }
 }
 #controlContainer {
     font-family: 'Oswald', sans-serif;
