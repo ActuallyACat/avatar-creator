@@ -3,245 +3,245 @@ $(document).ready(function() {
 
 	// Initialise the avatar canvas
     var avatarModel = new AvatarModel(
-    [
-        // white
-        {
-            "skinColour": "#F7ECE0",
-            "skinColourOutline": "#E4DBD0"
-        },
-        // Tan
-        {
-            "skinColour": "#FFE7CF", 
-            "skinColourOutline": "#E1C1A7"
-        },
-        // Brown
-        {
-            "skinColour": "#B36F2B", 
-            "skinColourOutline": "#A06122"
-        },
-        // Black
-        {
-            "skinColour": "#795742", 
-            "skinColourOutline": "#5C4034"
-        }
-    ], 
-    [
-        // white
-        {
-            "hairColour": "#FFFFFF",
-            "hairColourHighlights": "#E4E4E4"
-        },
-        // blue
-        {
-            "hairColour": "#47D1F3", 
-            "hairColourHighlights": "#10BCE7"
-        },
-        // Pink
-        {
-            "hairColour": "#FF3CB1", 
-            "hairColourHighlights": "#F40294"
-        },
-        // Green
-        {
-            "hairColour": "#33FF00", 
-            "hairColourHighlights": "#30E302"
-        },
-        // Purple
-        {
-            "hairColour": "#CC33FF", 
-            "hairColourHighlights": "#AC0FF0"
-        },
-        // Yellow 
-        {
-            "hairColour": "#F9E10F", 
-            "hairColourHighlights": "#F8C44B"
-        },
-        // Ginger 
-        {
-            "hairColour": "#E26614", 
-            "hairColourHighlights": "#BB5411"
-        },
-        // Brown 
-        {
-            "hairColour": "#674E43", 
-            "hairColourHighlights": "#584141"
-        },
-        // Bluish 
-        {
-            "hairColour": "#394446", 
-            "hairColourHighlights": "#2E3837"
-        },
-        // Grey
-        {
-            "hairColour": "#D8E1EB", 
-            "hairColourHighlights": "#BCCCDC"
-        }
-    ],
-    [
-        // no shirt
-        {
-            "shirtSleeve": $('.avatar-sleeve-none')
-        },
-        // blue
-        {
-            "shirtColour": "#47D1F3", 
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        // white
-        {
-            "shirtColour": "#FFFFFF",
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        // Pink
-        {
-            "shirtColour": "#FF3CB1", 
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        // Green
-        {
-            "shirtColour": "#33FF00", 
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        // Purple
-        {
-            "shirtColour": "#CC33FF", 
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        // Yellow 
-        {
-            "shirtColour": "#F9E10F", 
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        // Ginger 
-        {
-            "shirtColour": "#E26614", 
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        // Brown 
-        {
-            "shirtColour": "#674E43", 
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        // Bluish 
-        {
-            "shirtColour": "#394446", 
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        // Grey
-        {
-            "shirtColour": "#D8E1EB", 
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        // white
-        {
-            "shirtColour": "#FFFFFF",
-            "shirtColourHighlight": "#EEE", 
-            "shirtSleeve": $('.avatar-sleeve-long')
-        },
-        // Brown 
-        {
-            "shirtColour": "#674E43", 
-            "shirtColourHighlight": "#82695F", 
-            "shirtSleeve": $('.avatar-sleeve-long')
-        },
-        // Bluish 
-        {
-            "shirtColour": "#394446", 
-            "shirtColourHighlight": "#536063", 
-            "shirtSleeve": $('.avatar-sleeve-long')
-        },
-        // Grey
-        {
-            "shirtColour": "#D8E1EB", 
-            "shirtColourHighlight": "E9EEF3", 
-            "shirtSleeve": $('.avatar-sleeve-long')
-        }
-    ],
-    [
-        // white
-        {
-            
-        },
-        // yellow/green 
-        {
-            "shirtColour": "#E3F733", 
-            "shirtColourHighlight": "#B5D443", 
-            "shirtColourChest": "#9BAB07", 
-            "shirt": $('#avatar-female-shirt-stripe'),
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        // Blue
-        {
-            "shirtColour": "#3DCAED", 
-            "shirtColourHighlight": "#16B1D8", 
-            "shirtColourChest": "#1D8AB8", 
-            "shirt": $('#avatar-female-shirt-stripe'),
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        // Yellow
-        {
-            "shirtColour": "#FFFF00", 
-            "shirtColourHighlight": "#FC0", 
-            "shirtColourChest": "#DBAF02", 
-            "shirt": $('#avatar-female-shirt-stripe'),
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        {
-            "shirtColour": "#F39", 
-            "shirtColourHighlight": "#FB0404", 
-            "shirtColourChest": "#D60F28", 
-            "shirt": $('#avatar-female-shirt-stripe'),
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        // Yellow/green 
-        {
-            "shirtColour": "#E3F733", 
-            "shirtColourChest": "#9BAB07", 
-            "shirt": $('#avatar-female-shirt-base'),
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        // Blue
-        {
-            "shirtColour": "#3DCAED", 
-            "shirtColourChest": "#1D8AB8", 
-            "shirt": $('#avatar-female-shirt-base'),
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        // Yellow
-        {
-            "shirtColour": "#FFFF00", 
-            "shirtColourChest": "#DBAF02", 
-            "shirt": $('#avatar-female-shirt-base'),
-            "shirtSleeve": $('.avatar-sleeve-short')
-        },
-        {
-            "shirtColour": "#F39", 
-            "shirtColourChest": "#D60F28", 
-            "shirt": $('#avatar-female-shirt-base'),
-            "shirtSleeve": $('.avatar-sleeve-short')
-        }
-    ],
-    [
-        {
-            //no pants
-        },
-        // white
-        {
-            "pantsColour": "#FFF7EE",
-        },
-        // Tan
-        {
-            "pantsColour": "#FFE7CF",
-        },
-        // Brown
-        {
-            "pantsColour": "#B36F2B", 
-        },
-        // Black
-        {
-            "pantsColour": "#795742", 
-        }
-    ]
+        [
+            // white
+            {
+                "skinColour": "#F7ECE0",
+                "skinColourOutline": "#E4DBD0"
+            },
+            // Tan
+            {
+                "skinColour": "#FFE7CF", 
+                "skinColourOutline": "#E1C1A7"
+            },
+            // Brown
+            {
+                "skinColour": "#B36F2B", 
+                "skinColourOutline": "#A06122"
+            },
+            // Black
+            {
+                "skinColour": "#795742", 
+                "skinColourOutline": "#5C4034"
+            }
+        ], 
+        [
+            // white
+            {
+                "hairColour": "#FFFFFF",
+                "hairColourHighlights": "#E4E4E4"
+            },
+            // blue
+            {
+                "hairColour": "#47D1F3", 
+                "hairColourHighlights": "#10BCE7"
+            },
+            // Pink
+            {
+                "hairColour": "#FF3CB1", 
+                "hairColourHighlights": "#F40294"
+            },
+            // Green
+            {
+                "hairColour": "#33FF00", 
+                "hairColourHighlights": "#30E302"
+            },
+            // Purple
+            {
+                "hairColour": "#CC33FF", 
+                "hairColourHighlights": "#AC0FF0"
+            },
+            // Yellow 
+            {
+                "hairColour": "#F9E10F", 
+                "hairColourHighlights": "#F8C44B"
+            },
+            // Ginger 
+            {
+                "hairColour": "#E26614", 
+                "hairColourHighlights": "#BB5411"
+            },
+            // Brown 
+            {
+                "hairColour": "#674E43", 
+                "hairColourHighlights": "#584141"
+            },
+            // Bluish 
+            {
+                "hairColour": "#394446", 
+                "hairColourHighlights": "#2E3837"
+            },
+            // Grey
+            {
+                "hairColour": "#D8E1EB", 
+                "hairColourHighlights": "#BCCCDC"
+            }
+        ],
+        [
+            // no shirt
+            {
+                "shirtSleeve": $('.avatar-sleeve-none')
+            },
+            // blue
+            {
+                "shirtColour": "#47D1F3", 
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            // white
+            {
+                "shirtColour": "#FFFFFF",
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            // Pink
+            {
+                "shirtColour": "#FF3CB1", 
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            // Green
+            {
+                "shirtColour": "#33FF00", 
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            // Purple
+            {
+                "shirtColour": "#CC33FF", 
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            // Yellow 
+            {
+                "shirtColour": "#F9E10F", 
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            // Ginger 
+            {
+                "shirtColour": "#E26614", 
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            // Brown 
+            {
+                "shirtColour": "#674E43", 
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            // Bluish 
+            {
+                "shirtColour": "#394446", 
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            // Grey
+            {
+                "shirtColour": "#D8E1EB", 
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            // white
+            {
+                "shirtColour": "#FFFFFF",
+                "shirtColourHighlight": "#EEE", 
+                "shirtSleeve": $('.avatar-sleeve-long')
+            },
+            // Brown 
+            {
+                "shirtColour": "#674E43", 
+                "shirtColourHighlight": "#82695F", 
+                "shirtSleeve": $('.avatar-sleeve-long')
+            },
+            // Bluish 
+            {
+                "shirtColour": "#394446", 
+                "shirtColourHighlight": "#536063", 
+                "shirtSleeve": $('.avatar-sleeve-long')
+            },
+            // Grey
+            {
+                "shirtColour": "#D8E1EB", 
+                "shirtColourHighlight": "E9EEF3", 
+                "shirtSleeve": $('.avatar-sleeve-long')
+            }
+        ],
+        [
+            // white
+            {
+                
+            },
+            // yellow/green 
+            {
+                "shirtColour": "#E3F733", 
+                "shirtColourHighlight": "#B5D443", 
+                "shirtColourChest": "#9BAB07", 
+                "shirt": $('#avatar-female-shirt-stripe'),
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            // Blue
+            {
+                "shirtColour": "#3DCAED", 
+                "shirtColourHighlight": "#16B1D8", 
+                "shirtColourChest": "#1D8AB8", 
+                "shirt": $('#avatar-female-shirt-stripe'),
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            // Yellow
+            {
+                "shirtColour": "#FFFF00", 
+                "shirtColourHighlight": "#FC0", 
+                "shirtColourChest": "#DBAF02", 
+                "shirt": $('#avatar-female-shirt-stripe'),
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            {
+                "shirtColour": "#F39", 
+                "shirtColourHighlight": "#FB0404", 
+                "shirtColourChest": "#D60F28", 
+                "shirt": $('#avatar-female-shirt-stripe'),
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            // Yellow/green 
+            {
+                "shirtColour": "#E3F733", 
+                "shirtColourChest": "#9BAB07", 
+                "shirt": $('#avatar-female-shirt-base'),
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            // Blue
+            {
+                "shirtColour": "#3DCAED", 
+                "shirtColourChest": "#1D8AB8", 
+                "shirt": $('#avatar-female-shirt-base'),
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            // Yellow
+            {
+                "shirtColour": "#FFFF00", 
+                "shirtColourChest": "#DBAF02", 
+                "shirt": $('#avatar-female-shirt-base'),
+                "shirtSleeve": $('.avatar-sleeve-short')
+            },
+            {
+                "shirtColour": "#F39", 
+                "shirtColourChest": "#D60F28", 
+                "shirt": $('#avatar-female-shirt-base'),
+                "shirtSleeve": $('.avatar-sleeve-short')
+            }
+        ],
+        [
+            {
+                //no pants
+            },
+            // white
+            {
+                "pantsColour": "#FFF7EE",
+            },
+            // Tan
+            {
+                "pantsColour": "#FFE7CF",
+            },
+            // Brown
+            {
+                "pantsColour": "#B36F2B", 
+            },
+            // Black
+            {
+                "pantsColour": "#795742", 
+            }
+        ]
     );
     var avatarView = new AvatarView(avatarModel, {});
     var avatarController = new AvatarController(avatarModel, avatarView);
@@ -267,10 +267,6 @@ Event.prototype = {
 };
 
 
-/**
- * The Model. Model stores items and notifies
- * observers about changes.
- */
 function AvatarModel(skinColours, hairColours, maleShirtColours, femaleShirtColours, pantsColours) {
 
     this._genderSelector = $('.gender-group')
@@ -372,36 +368,22 @@ AvatarModel.prototype = {
     },
 
     saveAvatar: function() {
-        canvg('canvas', '<svg>' + $("#avatarCanvas").html() + '</svg>');
-
-        var canvas = document.getElementById("canvas");
-        var img = canvas.toDataURL("image/png")
-
-        // console.log(canvas.toDataURL("image/png"))
-
-        // $('.chart').html(img_PNG)
-        // var chart = $('#avatarCanvas').attr('xmlns', 'http://www.w3.org/2000/svg');
-        // var width = chart.width();
-        // var height = chart.height();
-
-        // var data = new XMLSerializer().serializeToString(chart.get(0));
-        // var svg = new Blob([data], { type: "image/svg+xml;charset=utf-8" });
-        // var url = URL.createObjectURL(svg);
-
-        // var img = $('<img />')
-        //     .width(width)
-        //     .height(height)
-        //     .on('load', function() {
-        //         var canvas = document.createElement('canvas');
-        //         canvas.width = width;
-        //         canvas.height = height;
-        //         var ctx = canvas.getContext('2d');
-        //         ctx.drawImage(img.get(0), 0, 0);
-        //         canvas.toBlob(function(blob) {
-        //             saveAs(blob, "test.png");
-        //         });
-        //     });
-        // img.attr('src', url);
+        var svgData = document.getElementById("avatarCanvas")
+        var serializer = new XMLSerializer()
+        svgData = serializer.serializeToString( svgData )
+        $.ajax({
+            url: "/",
+            data: JSON.stringify({ svgString: svgData }),
+            type: 'POST',
+            contentType: "text/xml",
+            dataType: "text",
+        })
+        .done(function() {
+            // alert( "success" );
+        })
+        .fail(function() {
+            // alert( "error" );
+        })
     },
 
     updateSkinColour: function(skinIndex) {
